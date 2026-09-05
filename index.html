@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jane Doe | Lighting Designer Portfolio</title>
+    <title>Tom Kirby | Portfolio</title>
     <style>
         /* CSS Reset & Variables */
         * {
@@ -43,7 +43,7 @@
         }
 
         .logo {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: bold;
             letter-spacing: 1px;
             color: var(--accent-color);
@@ -161,6 +161,7 @@
             height: 200px;
             background-size: cover;
             background-position: center;
+            background-color: #2a2a2a; /* Fallback color if image path is missing */
         }
 
         .project-info {
@@ -198,6 +199,21 @@
             text-decoration: underline;
         }
 
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            color: var(--accent-color);
+        }
+
         /* Footer */
         footer {
             text-align: center;
@@ -221,8 +237,9 @@
 </head>
 <body>
 
+    <!-- Header -->
     <header>
-        <div class="logo">Tom Kirby // Theatrical Lighting Technician</div>
+        <div class="logo">Tom Kirby // Lighting Technician</div>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -232,54 +249,65 @@
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero">
         <h1>Sculpting with <span>Light</span></h1>
         <p>Theatrical and event lighting design that transforms spaces and evokes emotion.</p>
         <a href="#portfolio" class="btn">View My Work</a>
     </section>
 
+    <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
         <div class="about-content">
-            <p>I am a theatre technician with experience in educational and amateur youth productions in a variety of roles, including Lighting Designer, Assistant Production LX, LX2 and Sound 1. I'm passionate about live theatre and enhancing theatrical experiences through technological solutions.</p>
+            <p>Theatre technologist currently studying Production Arts at the Guildhall School of Music & Drama. Experienced through school and amateur youth productions in a variety of roles, including LX designer, stage crew, and sound 1. Passionate about live theatre and enhancing the audience experience through innovative technological solutions.</p>
         </div>
     </section>
 
+    <!-- Portfolio Section -->
     <section id="portfolio">
         <h2>Selected Projects</h2>
         <div class="gallery-grid">
+            <!-- Project 1 -->
             <div class="project-card">
-                <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80');"></div>
+                <div class="project-img" style="background-image: url('placeholder-project1.jpg');"></div>
                 <div class="project-info">
-                    <h3>The Neon Horizon</h3>
-                    <p>Concert lighting design focusing on dynamic beam choreography and moody saturated color palettes.</p>
+                    <h3>Chipperfield Theatre Group</h3>
+                    <p>Designed and rigged 4 shows, implementing a new DMX lighting system to replace dimmer packs and reduce production power use.</p>
                 </div>
             </div>
+            <!-- Project 2 -->
             <div class="project-card">
-                <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=600&q=80');"></div>
+                <div class="project-img" style="background-image: url('placeholder-project2.jpg');"></div>
                 <div class="project-info">
-                    <h3>Urban Façade Glow</h3>
-                    <p>Architectural accent lighting installation highlighting modern structural contours sustainably.</p>
+                    <h3>The Christmas Thing – 7 Dials Playhouse</h3>
+                    <p>Collaborated with crew to rig lights for the production, applying simple programming on ETC Eos.</p>
                 </div>
             </div>
+            <!-- Project 3 -->
             <div class="project-card">
-                <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80');"></div>
+                <div class="project-img" style="background-image: url('placeholder-project3.jpg');"></div>
                 <div class="project-info">
-                    <h3>Theatrics of Shadow</h3>
-                    <p>Stage lighting design utilizing high-contrast chiaroscuro techniques for a contemporary drama production.</p>
+                    <h3>St Clement Danes Productions</h3>
+                    <p>Managed sound and lighting as Technical Theatre Prefect across 9 school productions in versatile and fixed spaces.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="contact">
         <h2>Get In Touch</h2>
         <p>Interested in collaborating on a project or stage production? Let's talk.</p>
-        <a href="mailto:contact@janedoelighting.com" class="contact-email">contact@janedoelighting.com</a>
+        <a href="mailto:tk.lxdesign@gmail.com" class="contact-email">tk.lxdesign@gmail.com</a>
+        <div class="social-links">
+            <p>Phone: +44 7421 206460 | <a href="https://www.linkedin.com/in/tomkirby314/" target="_blank">LinkedIn Profile</a></p>
+        </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Jane Doe. All rights reserved.</p>
+        <p>&copy; 2026 Tom Kirby. All rights reserved.</p>
     </footer>
 
 </body>
